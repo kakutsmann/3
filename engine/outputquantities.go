@@ -17,9 +17,9 @@ import (
 // The Info interface defines the bare minimum methods a quantity must implement
 // to be accessible for scripting and I/O.
 type Info interface {
-	Name() string // number of components (scalar, vector, ...)
-	Unit() string // name used for output file (e.g. "m")
-	NComp() int   // unit, e.g. "A/m"
+	Name() string // name used for output file (e.g. "m")
+	Unit() string // unit, e.g. "A/m"
+	NComp() int   // number of components (scalar, vector, ...)
 }
 
 // info provides an Info implementation intended for embedding in other types.

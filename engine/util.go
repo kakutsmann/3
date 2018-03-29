@@ -37,11 +37,11 @@ func NewSlice(ncomp, Nx, Ny, Nz int) *data.Slice {
 }
 
 func NewVectorMask(Nx, Ny, Nz int) *data.Slice {
-	return data.NewSlice(3, [3]int{Nx, Ny, Nz})
+	return data.NewSlice(VECTOR, [3]int{Nx, Ny, Nz})
 }
 
 func NewScalarMask(Nx, Ny, Nz int) *data.Slice {
-	return data.NewSlice(1, [3]int{Nx, Ny, Nz})
+	return data.NewSlice(SCALAR, [3]int{Nx, Ny, Nz})
 }
 
 // Constructs a vector
